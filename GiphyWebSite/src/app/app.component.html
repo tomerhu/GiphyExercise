@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="content">
+    <h1 class="headerText">Welcome to the Giphy Fetch</h1>
+    <p>
+      <mat-form-field>
+        <input matInput #search matInput type="text" name="search" placeholder="Enter Search Term for your Gif">
+      </mat-form-field>
+    </p>
+    <p>
+      <span>Click this button to see the Gifs list:</span> 
+      <button type="button" name="show" (click)="getGif(search.value)">Show Gif</button>
+    </p>
+  </div>
+  <ng-container *ngIf="giphyItem" class="gifs">
+    <p>
+      <mat-label>{{giphyItem.url}}</mat-label>
+      <img src={{giphyItem.url}}/>
+    </p>
+  </ng-container>
+</div>
