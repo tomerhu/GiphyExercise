@@ -33,4 +33,6 @@ while(tasks.Count > 0) {
     catch(Exception exc) { Handle(exc); }
 }
 
-2. UI - Add search by few terms split by "," to demo the asynchronus Gifs return 
+2. DB - The cache is in the server's memory, if there is a restart all the cache will be earsed. An improvement of the DB is to use external one - Oracle, Sql or noSql.
+
+3. UI - Add search by few terms split by "," to demo the asynchronus Gifs return 
